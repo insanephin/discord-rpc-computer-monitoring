@@ -14,7 +14,7 @@ while True:
         small_image="microsoft-windows-server", small_text="Windows Server 2022 Datacenter", 
         start=start_time, 
         
-        details=f"CPU ㅣ{round(psutil.cpu_percent(), 1)}% {round(psutil.cpu_freq().current/1024, 2)}GHz", 
+        details=f"CPU ㅣ{round(psutil.cpu_percent(interval=1), 1)}% {round(psutil.cpu_freq().current/1024, 2)}GHz", 
         state=f"RAMㅣ{round(mem.percent, 1)}% {round(mem.used/1024**3, 1)}GB/{round(mem.total/1024**3, 1)}GB",
     )
     time.sleep(1)
