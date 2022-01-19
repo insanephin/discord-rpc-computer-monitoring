@@ -9,7 +9,7 @@ start_time = time.time()
 while True:
     mem = psutil.virtual_memory()
     rpc.update(
-        # buttons=[{"label": "Watchdog", "url": "https://petcafe.xyz/invite"}, {"label": "Server", "url": "https://discord.gg/jVc3ByWVd3"}], 
+        buttons=[{"label": "Watchdog", "url": "https://petcafe.xyz/invite"}, {"label": "Server", "url": "https://discord.gg/jVc3ByWVd3"}], 
         large_image="intel_pentium_2020_logo", large_text="Intel Pentium G3250T @ 2.80GHz",
         small_image="microsoft-windows-server", small_text="Windows Server 2022 Datacenter", 
         start=start_time, 
