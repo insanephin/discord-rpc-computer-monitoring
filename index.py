@@ -4,7 +4,7 @@ import time, psutil
 client_id = "933214976817119263"
 rpc = Presence(client_id=client_id, pipe=0)
 rpc.connect()
-start_time = time.time()
+start_time = time.time() - time.monotonic()
 
 while True:
     mem = psutil.virtual_memory()
